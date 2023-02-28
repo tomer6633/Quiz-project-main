@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <script src="./dist/index.js" defer></script>
+    <link rel="stylesheet" href="./dist/style.css">
+    
+</head>
+<body>
+    <div id="score"></div>
+<!-- <button class="start" onclick="setTimer()">START</button> -->
+<div class="timer">
+    <h1 class="time">00:00</h1>
+    <button class="start">Start</button>
+    <button class="stop">Stop</button>
+    <button class="resume">Restart</button>
+  </div>
+
+  <form onsubmit="hendleLevel(event)">
+    <label for="levels">Choose a level of difficulty:</label>
+        <select id="levels" name="levels" class="selectVal">
+            <option value="level1">Level 1= 3 pairs</option>
+            <option value="level2">Level 2= 6 pairs</option>
+            <option value="level3">Level 3= 10 pairs</option>
+        </select>
+        <input type="submit">
+    </form>
+  
+    <main>
+        <div class="level1">😀</div>
+        <div class="level1">😀</div>
+        <div class="level1">❤️</div>
+        <div class="level1">❤️</div>
+        <div class="level1">😇</div>
+        <div class="level1">😇</div>
+        <div class="level2">🦁</div>
+        <div class="level2">🦁</div>
+        <div class="level2">🗿</div>
+        <div class="level2">🗿</div>
+        <div class="level2">🗽</div>
+        <div class="level2">🗽</div>
+        <div class="level3">😂</div>
+        <div class="level3">😂</div>
+        <div class="level3">🤩</div>
+        <div class="level3">🤩</div>
+        <div class="level3">🤯</div>
+        <div class="level3">🤯</div>
+        <div class="level3">⏰</div>
+        <div class="level3">⏰</div>
+    </main>
+    
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.time {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+button {
+  font-size: 24px;
+  padding: 8px 16px;
+  margin: 8px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50vh;
+  margin-top: 25vh;
+}
+
+.box {
+  width: 10vw;
+  height: 12.5vh;
+  background-color: darkblue;
+  color: transparent;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: flex;
+  font-size: xx-large;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.box img {
+  width: 10vw;
+  height: 12.5vh;
+  opacity: 1;
+}
+
+.show {
+  animation: show 2s forwards;
+  transform: rotateY(180deg);
+}
+
+@keyframes show {
+  0% {
+    background-color: darkblue;
+    color: transparent;
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  100% {
+    background-color: red;
+    color: black;
+    opacity: 1;
+  }
+}
+.hide {
+  animation: hide 2s forwards;
+  transform: rotateY(180deg);
+}
+
+@keyframes hide {
+  0% {
+    background-color: red;
+    color: black;
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    background-color: darkblue;
+    color: transparent;
+    opacity: 0;
+  }
+}
+#score {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.level1 {
+  width: 10vw;
+  height: 12.5vh;
+  background-color: darkblue;
+  color: transparent;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: flex;
+  font-size: xx-large;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.level1 img {
+  width: 10vw;
+  height: 12.5vh;
+  opacity: 1;
+}
+
+.level2 {
+  width: 10vw;
+  height: 12.5vh;
+  background-color: darkblue;
+  color: transparent;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: flex;
+  font-size: xx-large;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.level2 img {
+  width: 10vw;
+  height: 12.5vh;
+  opacity: 1;
+}
+
+.level3 {
+  width: 10vw;
+  height: 12.5vh;
+  background-color: darkblue;
+  color: transparent;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: flex;
+  font-size: xx-large;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.level3 img {
+  width: 10vw;
+  height: 12.5vh;
+  opacity: 1;
+}
